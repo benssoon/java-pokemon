@@ -93,7 +93,7 @@ public abstract class Pokemon {
     }
 
     public void attack(Pokemon opponent, String move) {
-        System.out.printf("%s");
+        System.out.printf("%s used %s on %s!\n", this.getName(), move, opponent.getName());
         this.dealDamage(moveDamage.get(move), move, opponent);
     }
 
@@ -109,7 +109,7 @@ public abstract class Pokemon {
 
     public void checkFainted() {
         if (this.getHp() <= 0) {
-            System.out.printf("%s has fainted!", this.getName());
+            System.out.printf("%s has fainted!\n", this.getName());
         }
     }
 

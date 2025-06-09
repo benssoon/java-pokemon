@@ -1,7 +1,7 @@
 public abstract class GrassPokemon extends Pokemon {
 
     // Contants
-    private static final String IMMUNITY = "Leech Seed";
+    private static final String IMMUNITY = "Leech seed";
     private static final String WEAKNESS = "fire";
 
     // Properties
@@ -33,6 +33,7 @@ public abstract class GrassPokemon extends Pokemon {
         this.checkImmunity(move);
         if (!this.isImmune()) {
             if (WEAKNESS.equals(moveType)) {
+                System.out.println("It's super effective!");
                 damage *= 2;
             }
             super.takeDamage(damage, move, moveType);

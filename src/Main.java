@@ -9,33 +9,35 @@ public class Main {
 
         3. Probeer een manier te vinden waardoor één Pokèmon twee verschillende types tegelijk zou kunnen zijn. Kun je dit implementeren?
 
-
-        What do pokemon have?
-            - a name
-            - a type (or two)
-            - a species
-            - stats
-            - four moves
-            - pokedex entry
-            - pokeball type
-
         */
 
 
         Bulbasaur bulb = new Bulbasaur("Bulby", "Great Ball");
         System.out.printf("Your %s's name is %s and it is a %s-type Pokémon. %s was caught in a %s.\n\nPokédex entry:\n%s\n\n", bulb.getSpecies(), bulb.getName(), bulb.getType(), bulb.getName(), bulb.getPokeball(), bulb.getPokedexEntry());
 
-        Bulbasaur bob = new Bulbasaur();
-        Squirtle sq = new Squirtle();
+        Bulbasaur bob = new Bulbasaur("Bob");
+        Squirtle squire = new Squirtle("Squire");
+        Charizard chuck = new Charizard("Chuck");
 
         bob.addMove("Leech seed", 10);
+        bob.addMove("Vine whip", 18);
+
         bulb.addMove("Razor leaf", 20);
-        sq.addMove("Bubblebeam", 15);
+
+        squire.addMove("Bubblebeam", 15);
 
 
-        bulb.attack(sq, "Razor leaf");
+        System.out.printf("%s is battling %s!\n", bob.getName(), squire.getName());
+        bob.cry();
+        squire.cry();
+        bob.attack(squire, "Leech seed");
+        squire.attack(bob, "Bubblebeam");
+        bob.attack(squire, "Vine whip");
+
         bob.attack(bulb, "Leech seed");
-        sq.attack(bob, "Bubblebeam");
 
+        chuck.cry();
+        System.out.println(chuck.getSpecies() + chuck.getName());
+        System.out.println(chuck.getType());
     }
 }

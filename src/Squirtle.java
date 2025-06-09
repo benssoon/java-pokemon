@@ -10,14 +10,14 @@ public class Squirtle extends WaterPokemon {
         this.setSpecies("Squirtle");
         this.setPokedexEntry(POKEDEX_ENTRY);
         this.setCry(CRY);
-        this.setHp(20);
+        this.setHp(30);
     }
 
-    public Squirtle(String pokeball) {
-        this("SQUIRTLE", pokeball);
+    public Squirtle(String name) {
+        this(name, "Poké Ball");
     }
 
     public Squirtle() {
-        this("Poké Ball");
+        this("SQUIRTLE");
     }
 }

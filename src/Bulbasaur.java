@@ -15,12 +15,12 @@ public class Bulbasaur extends GrassPokemon {
         this.setHp(50);
     }
 
-    public Bulbasaur(String pokeball) {
-        this("BULBASAUR", pokeball);
+    public Bulbasaur(String name) {
+        this(name, "Poké Ball");
     }
 
     public Bulbasaur() {
-        this("Poké Ball");
+        this("BULBASAUR");
     }
 
 
