@@ -1,12 +1,12 @@
 public abstract class DualTypePokemon extends Pokemon {
 
-    protected String type1;
-    protected String type2;
+    private String type1;
+    private String type2;
 
     // Constructor
     public DualTypePokemon(String name, String pokeball, String type1, String type2) {
         super(name, pokeball);
-        this.type = type1 + "/" + type2;
+        this.setType(type1 + "/" + type2);
         this.type1 = type1;
         this.type2 = type2;
     }
@@ -15,7 +15,7 @@ public abstract class DualTypePokemon extends Pokemon {
         return switch (ordinal) {
             case 1 -> this.getType1();
             case 2 -> this.getType2();
-            default -> this.type;
+            default -> this.getType();
         };
     }
 

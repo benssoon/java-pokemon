@@ -3,11 +3,9 @@ public abstract class GrassPokemon extends Pokemon {
     // Constructor
     public GrassPokemon(String name, String pokeball) {
         super(name, pokeball);
-        this.type = "water";
+        this.setType("grass");
     }
 
-    public String getType() {
-        return this.type;
-    }
+
 }
 

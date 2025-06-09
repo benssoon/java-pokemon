@@ -22,7 +22,7 @@ public class Main {
         */
 
 
-        Bulbasaur bulb = new Bulbasaur("Bulby", "pokeball");
-        System.out.printf("Your %s's name is %s and it is a %s-type Pokémon.\n\nPokédex entry:\n%s\n\n", bulb.getSpecies(), bulb.getName(), bulb.getType(), bulb.getPokedexEntry());
+        Bulbasaur bulb = new Bulbasaur("Bulby", "Great Ball");
+        System.out.printf("Your %s's name is %s and it is a %s-type Pokémon. %s was caught in a %s.\n\nPokédex entry:\n%s\n\n", bulb.getSpecies(), bulb.getName(), bulb.getType(), bulb.getName(), bulb.getPokeball(), bulb.getPokedexEntry());
     }
 }
