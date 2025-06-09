@@ -6,13 +6,13 @@ public class Bulbasaur extends GrassPokemon {
 
     // Properties
 
-
     // Constructors
     public Bulbasaur(String name, String pokeball) {
         super(name, pokeball);
         this.setSpecies("Bulbasaur");
         this.setPokedexEntry(POKEDEX_ENTRY);
         this.setCry(CRY);
+        this.setHp(50);
     }
 
     public Bulbasaur(String pokeball) {
@@ -23,10 +23,8 @@ public class Bulbasaur extends GrassPokemon {
         this("Poké Ball");
     }
 
-    // Methods
-    public void razorLeaf() {
-        System.out.println("Razor leaf!");
 
-    }
+
+
 }
 
