@@ -1,7 +1,8 @@
 # Do not add IntelliJ files to git:
 *.iml
 .idea/
-
+out/
+    
 # Do not add Maven products to git:
 target/
     
